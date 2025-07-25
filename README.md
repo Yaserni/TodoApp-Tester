@@ -107,6 +107,9 @@ Make sure this is running before launching the tests.
 ### 1. Clone and Install Dependencies
 
 ```bash
+cd tests
+python -m venv myenv
+myenv\Scripts\activate
 pip install -r requirements.txt
 ```
 

@@ -1,160 +1,70 @@
-# Test Automation Framework – React & Node.js Application
+# Getting Started with Create React App
 
-This repository contains a complete test automation framework for a simple full-stack web application with a React frontend and a Node.js backend. The framework includes both UI tests (via Selenium WebDriver) and API tests (via Python requests and pytest), designed to validate core functionality such as authentication and CRUD operations.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 📌 Project Overview
+In the project directory, you can run:
 
-The application under test allows users to:
-- Log in with credentials
-- Create, edit, and delete items
+### `npm start`
 
-This test suite verifies those core flows through both the UI and backend APIs.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🧪 Test Coverage
+### `npm test`
 
-### UI Automation (Selenium + Pytest)
-- Valid login
-- Invalid login
-- Add item
-- Edit item
-- Delete item
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### API Tests (Requests + Pytest)
-- `POST /login` – valid and invalid credentials
-- `GET /items` – fetch all items
-- `POST /items` – create new item
-- `PUT /items/:id` – update existing item
-- `DELETE /items/:id` – remove item
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🧰 Tech Stack
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Python 3.8+
-- Selenium WebDriver (Chrome)
-- Pytest
-- Requests
-- Automatic ChromeDriver management
-- Node.js backend
-- React frontend
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-# 🚀 Getting Started
-## first of all need to configure the React application(Frontend && Backend)
-## ⚛️ Running the React Frontend
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Before running the UI tests, you must start the React frontend application.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 1. Navigate to the frontend folder:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```bash
-cd frontend
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### 2. Install frontend dependencies:
+## Learn More
 
-```bash
-npm install
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### 3. Start the React development server:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-npm start
-```
+### Code Splitting
 
-The application should now be available at:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```
-http://localhost:3000
-```
+### Analyzing the Bundle Size
 
-## ️ Running the Backend
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Before running the tests, you must start the Backend server.
+### Making a Progressive Web App
 
-### 1. Navigate to the backend folder:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```bash
-cd backend
-```
+### Advanced Configuration
 
-### 2. Install backend dependencies:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```bash
-npm install
-```
+### Deployment
 
-### 3. Start the backend server:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-```bash
-npm start
-```
+### `npm run build` fails to minify
 
-The application should now be available at:
-
-```
-http://localhost:5000
-```
-
-Make sure this is running before launching the tests.
-
-### 1. Clone and Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Ensure the Application is Running
-
-Start your backend server at:
-```
-http://localhost:5000
-```
-
-Start your React frontend at:
-```
-http://localhost:3000
-```
-
-### 3. Execute the Tests
-
-#### Run all UI tests:
-```bash
-pytest ui_tests/ -v
-```
-
-#### Run all API tests:
-```bash
-pytest api_tests/ -v
-```
-
----
-
-## 📁 Project Structure
-
-```
-selenium_ui_tests/
-├── api_tests/              # API test classes
-├── pages/                  # Page Object Model classes for UI
-├── ui_tests/               # UI test classes
-├── utils/                  # Driver setup and management
-├── conftest.py             # Pytest fixtures
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
-```
-
----
-
-## ⚙️ Notes
-
-- The test suite automatically downloads and uses a compatible 64-bit ChromeDriver for consistency.
-- Page Object Model (POM) pattern is used to separate test logic from UI element locators.
-- No external test data or configuration files are required.
-- All tests are self-contained and designed for local execution.
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
